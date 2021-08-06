@@ -227,6 +227,7 @@ body {
 .container {
   background-image: url(content/54898655_m.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 #section-first {
