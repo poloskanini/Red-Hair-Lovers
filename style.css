@@ -94,17 +94,20 @@ body {
   padding: 0 0.75rem 0.75rem 0.75rem;
   color: rgb(231, 52, 88);
   text-decoration: none;
-  text-shadow: 1px 1px 2px #000;
 }
 
-#desktop-center-link {
+.desktop-center {
+  color: #FFF;
+}
+
+#desktop-center-link,
+#desktop-center-link-log {
   padding: 0 0.75rem 0 0.75rem;
   line-height: 1.2;
   text-shadow: rgb(0 0 0 / 30%) 0px 2px 2px;
   text-decoration: none;
   color: #FFF;
   transition: all .2s ease-in-out;
-  text-shadow: 1px 1px 2px #000;
 }
 
 #desktop-center-link:hover {
@@ -232,41 +235,61 @@ body {
 
 #section-first {
   height: 100vh;
-}
-
-.section {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 100%;
-  width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
+  color: #FFF;
 }
 
 .leaflet_wrapper {
-  padding-top: 32px;
+  padding: 3rem;
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .leaflet_imageWrapper {
-  width: 900px;
+  width: 500px;
   position: relative;
 }
 
+.leaflet_content_left {
+  margin-right: 100px;
+}
+
+.leaflet_content_left,
+.leaflet_content_right {
+
+}
+
 .raw_image {
-  background-image: url(https://www.datocms-assets.com/33185/1600423260-lucky-folks-01.jpg);
+  background-image: url(content/Rousse1.png);
   padding-top: 75%;
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   width: 100%;
   height: 100px;
 }
 
-.raw_image_bis {
-  background-image: url(https://www.datocms-assets.com/33185/1598366519-teambuilding-koezio.jpg);
+.raw_image_2 {
+  background-image: url(content/Rousse2.png);
   padding-top: 75%;
-  background-position: center center;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+
+.raw_image_3 {
+  background-image: url(content/Rousse3.png);
+  padding-top: 75%;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
+
+.raw_image_4 {
+  background-image: url(content/Rousse4.png);
+  padding-top: 75%;
+ ;
   background-size: cover;
   width: 100%;
   height: 100px;
@@ -316,6 +339,8 @@ body {
 .description {
   margin: 1rem 0;
   max-width: 40rem;
+  font-style: italic;
+  cursor: pointer;
 }
 
 .learn_more {
@@ -336,22 +361,9 @@ body {
   animation: 8s ease 0s infinite alternate none running eiQYMh;
 }
 
-.blue-link {
-  display: flex;
-  white-space: nowrap;
-  border-radius: 30px;
-  text-decoration: none;
-  padding: 0.5rem 1.5rem;
-  font-size: 1.2rem;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  min-height: 48px;
-  color: rgb(255, 255, 255);
-  max-width: 16rem;
-  animation: eiQYMh 8s ease 0s infinite alternate none running;
-  background-image: linear-gradient(rgb(49, 39, 131), rgb(49, 39, 131));
+
+.description a {
+  cursor: pointer;
 }
 
 .learn_more:hover {
@@ -370,6 +382,188 @@ body {
   }
 }
 
+/* FORMULAIRE */
+
+.section,
+.section_page2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+  width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box {
+  color: black;
+  text-align: center;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.516);
+  border-radius: 5px;
+}
+
+.formBlock {
+  text-align: center;
+  padding: 10px;
+  margin-top: 8rem;
+}
+
+.formBlock h3 {
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 45px;
+  color: rgb(209, 46, 17);
+  text-shadow: 0 1px 0.1px rgb(131, 128, 128);
+}
+
+.formBlock .formGroup {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formBlock .formGroup label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 20px;
+  transition: 0.4s ease-out;
+  width: 100%;
+}
+
+.formBlock .formGroup input {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  font-size: 20px;
+  transition: .4s ease-out;
+}
+
+#utilisateur {
+  position: relative;
+  z-index: 1000;
+}
+
+.formBoxes {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  font-size: 20px;
+  transition: .4s ease-out;
+  cursor: pointer;
+}
+
+.formBoxes label,
+.formBoxes input {
+  cursor: pointer;
+}
+
+.formBoxes,
+.formSubmit {
+  margin-bottom: 65px;
+  justify-content: center;
+}
+
+.formBoxes p {
+  margin: 20px 0;
+}
+
+.buttonsub {
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.formSubmit {
+  display: flex;
+}
+
+.formSubmit .buttonsub {
+  display: block;
+  width: auto;
+  padding: 15px 60px;
+  border: 3px solid #d7a38b;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: white;
+  background-image: linear-gradient(to right, transparent 50%, #ceccc8 50%, #fcdc27);
+  background-size: 300%;
+  color: black;
+  font-weight: 500;
+  transition: .4s ease-in;
+}
+
+.formSubmit .buttonsub:hover {
+  color: #FFF;
+  background-position: 100%;
+}
+
+.mdpperdu a {
+  text-decoration: none;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  color: #425cf1;
+}
+
+.mdpperdu a:hover {
+  border-bottom-color: #5260ad;
+}
+
+.formBlock .formGroup:focus-within label,
+.formBlock .formGroup.animation label {
+  top: 0;
+  transform: translateY(-100%);
+  color: #8D97d7;
+}
+
+.formBlock .formGroup:focus-within input,
+.formBlock .formGroup.animation input {
+  border-bottom-color: #8b97d7;
+}
+
+
+/* PAGE2 */
+
+.main_page2 {
+  background-image: url(content/65300962_m.jpg);
+  background-size: cover;
+  height: 200vh;
+}
+
+.section_page2 {
+  padding-top: 100px;
+}
+
+/* Page 3 */
+.video_box {
+  height: 100vh;
+  position: relative;
+  background: #000;
+}
+
+.video_box video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
 
 /* MEDIA QUERIES MOBILE */
 @media screen and (max-width: 1100px) {
@@ -379,6 +573,8 @@ body {
 
   .leaflet_wrapper {
     display: block;
+    padding: 0;
+    padding-bottom: 3rem;
   }
 
   .leaflet_imageWrapper {
@@ -395,6 +591,11 @@ body {
   .container {
     background-position: bottom center;
   }
+
+  .section_page2 {
+    display: block;
+  }
+
 }
 
 /* MEDIA QUERIES ORIENTATION PAYSAGE */
