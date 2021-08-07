@@ -15,6 +15,8 @@ window.onscroll = function() {
   }
 }
 
+
+// Effet
 const inputs = document.querySelectorAll('input');
 for (let i = 0; i < inputs.length; i++) {
   let field = inputs[i];

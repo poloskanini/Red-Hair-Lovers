@@ -32,7 +32,7 @@ body {
 /* Barre de couleur sur le côté du site (left & right)*/
 .wrapper::before {
   content: '';
-  z-index: 100;
+  z-index: 10000;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -110,7 +110,8 @@ body {
   transition: all .2s ease-in-out;
 }
 
-#desktop-center-link:hover {
+#desktop-center-link:hover,
+#desktop-center-link-log:hover {
   border-bottom: 2px solid rgb(231, 52, 88);;
   padding: 0 0.75rem 0.75rem 0.75rem;
   color: rgb(231, 52, 88);;
@@ -254,11 +255,6 @@ body {
   margin-right: 100px;
 }
 
-.leaflet_content_left,
-.leaflet_content_right {
-
-}
-
 .raw_image {
   background-image: url(content/Rousse1.png);
   padding-top: 75%;
@@ -343,6 +339,10 @@ body {
   cursor: pointer;
 }
 
+.description p {
+  font-size: 16px;
+}
+
 .learn_more {
   display: flex;
   white-space: nowrap;
@@ -409,7 +409,7 @@ body {
 .formBlock {
   text-align: center;
   padding: 10px;
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
 .formBlock h3 {
@@ -423,9 +423,10 @@ body {
 .formBlock .formGroup {
   position: relative;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .formBlock .formGroup label {
@@ -455,6 +456,63 @@ body {
   z-index: 1000;
 }
 
+/* SELECT DEPARTEMENTS */
+
+
+
+.formGroup-dpt {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formGroup-dpt label {
+  font-size: 20px;
+}
+.formGroup-dpt select {
+  padding: 5px 8px;
+  width: 200px;
+  height: 38px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  font-size: 20px;
+}
+
+.formGroup-dpt:after {
+  top: 50%;
+  left: 85%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #000000;
+  border-width: 5px;
+  margin-top: -2px;
+  z-index: 100;
+}
+.select-style select:focus {
+  outline: none;
+}
+
 .formBoxes {
   width: 100%;
   padding: 10px 0;
@@ -474,17 +532,18 @@ body {
 
 .formBoxes,
 .formSubmit {
-  margin-bottom: 65px;
   justify-content: center;
 }
 
-.formBoxes p {
+.formBoxes p,
+.formGroup p {
   margin: 20px 0;
 }
 
 .buttonsub {
   font-size: 17px;
   text-decoration: none;
+  margin: 30px;
 }
 
 .formSubmit {
@@ -523,6 +582,7 @@ body {
   border-bottom-color: #5260ad;
 }
 
+/* Animation Labels */
 .formBlock .formGroup:focus-within label,
 .formBlock .formGroup.animation label {
   top: 0;
@@ -563,8 +623,6 @@ body {
 }
 
 
-
-
 /* MEDIA QUERIES MOBILE */
 @media screen and (max-width: 1100px) {
   .desktop-center {
@@ -575,6 +633,10 @@ body {
     display: block;
     padding: 0;
     padding-bottom: 3rem;
+  }
+
+  .leaflet_content_text {
+    font-size: 16px;
   }
 
   .leaflet_imageWrapper {
