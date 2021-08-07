@@ -361,7 +361,6 @@ body {
   animation: 8s ease 0s infinite alternate none running eiQYMh;
 }
 
-
 .description a {
   cursor: pointer;
 }
@@ -457,8 +456,6 @@ body {
 }
 
 /* SELECT DEPARTEMENTS */
-
-
 
 .formGroup-dpt {
   padding: 0;
@@ -595,6 +592,18 @@ body {
   border-bottom-color: #8b97d7;
 }
 
+/* FOOTER */
+/* footer {
+  height: 7vh;
+  position: absolute;
+  bottom: 0;
+  background: #282D31;;
+  width: 100%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 /* PAGE2 */
 
@@ -624,7 +633,7 @@ body {
 
 
 /* MEDIA QUERIES MOBILE */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 600px) {
   .desktop-center {
     display: none;
   }
@@ -662,8 +671,16 @@ body {
 
 /* MEDIA QUERIES ORIENTATION PAYSAGE */
 @media screen and (orientation: landscape) and (max-height: 600px) {
+
+  .desktop-center {
+    display: none;
+  }
   .hero-content {
     top: 70%;
     padding: 25%;
+  }
+
+  .container #section-first {
+    height: 150vh;
   }
 }
