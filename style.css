@@ -614,7 +614,7 @@ body {
 .main_page2 {
   background-image: url(content/65300962_s.jpg);
   background-size: cover;
-  background-position: ce;
+  background-position: center;
   height: 230vh;
 }
 
