@@ -634,22 +634,6 @@ body {
 
 /* Page 3 */
 
-.seb-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
 .seb-dreaming {
   width: 100%;
   height: 100vh;
@@ -665,12 +649,28 @@ body {
 }
 
 .seb-dreaming h1 span {
-  font-size: calc(5vmin + 10px);
+  font-size: calc(2vmin + 10px);
+  font-size: clamp(2px, 5vw, 54px);
   margin: 0 10px;
   font-weight: 800;
   color: #5a5a5a;
-  -webkit-animation: flash 1.2s linear infinite;
-          animation: flash 1.2s linear infinite;
+  animation: flash 1.2s linear infinite;
+  animation: flash 1.2s linear infinite;
+}
+
+.seb-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @-webkit-keyframes flash {
