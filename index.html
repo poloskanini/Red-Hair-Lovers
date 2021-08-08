@@ -12,7 +12,8 @@
   <meta property="og:title" content="Red-Hair Lovers" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://www.redhairlovers.fr/" />
-  <meta property="og:image" content="https://www.sngaf.com/wp-content/uploads/2021/08/poster-redhair-og.png" />
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="content/poster-redhair.png" />
   <meta property="og:description" content="Description Here" />
   <!-- TITLE -->
   <title>Red-Hair Lovers</title>
@@ -53,17 +54,6 @@
       <div class="hero-content">
         <h1>Red-Hair Lovers</h1>
         <p>Le 1er site de rencontre pour les hommes qui aiment les rousses.</p>
-        <div class="button-div">
-          <button class="hero-button">
-            <div class="hero-svg">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#fff" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255);"><path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg>
-            </div>
-            <div class="hero-reset">
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" color="#fff" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="color: rgb(255, 255, 255);"><path d="M9 16h2V8H9v8zm3-14C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-4h2V8h-2v8z"></path></svg>
-            </div>
-          </button>
-        </div>
-        
       </div>
     </div>
   
@@ -83,13 +73,13 @@
               <div class="formGroup">
                 <label for="name">Quel est votre prénom ?
                 </label>
-                <input type="text"  id="utilisateur" max-length="16">
+                <input type="text"  id="utilisateur">
               </div>
 
               <div class="formGroup">
                 <label for="city">Quelle est votre ville ?
                 </label>
-                <input type="text"  id="utilisateur" max-length="16">
+                <input type="text"  id="city">
               </div>
 
               <!-- SELECT DEPARTEMENTS -->
@@ -207,17 +197,16 @@
 
               <div class="formBoxes">
                 <p>Quel est votre tranche d'âge ?</p>
-                </label>
-                <input type="checkbox"  id="checkbox">
+                <input type="checkbox"  id="checkbox1">
                 <label for="18-24">18-24</label>
-                <input type="checkbox"  id="checkbox">
+                <input type="checkbox"  id="checkbox2">
                 <label for="25-34">25-34</label>
-                <input type="checkbox"  id="checkbox">
+                <input type="checkbox"  id="checkbox3">
                 <label for="35-49">35-49</label>
-                <input type="checkbox"  id="checkbox">
+                <input type="checkbox"  id="checkbox4">
                 <label for="50-64">50-64</label>
-                <input type="checkbox"  id="checkbox">
-                <label for="65 +">65 +</label>
+                <input type="checkbox"  id="checkbox5">
+                <label for="65">65 +</label>
               </div>
 
               <div class="formSubmit">
@@ -228,10 +217,9 @@
                 <a href="#">Mot de passe perdu ?</a>
               </div>
 
-
             </form>
           </div>
-
+        </div>
       </div>
     </main>
     
@@ -241,6 +229,6 @@
 
   </div>
 
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
