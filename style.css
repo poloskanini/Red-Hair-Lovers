@@ -190,7 +190,7 @@ body {
   margin-top: 20px;
   text-shadow: rgb(0 0 0 / 30%) 0px 2px 2px;
   user-select: none;
-
+  padding: 0 15%;
 }
 
 .button-div {
@@ -634,6 +634,10 @@ body {
 
 /* MEDIA QUERIES MOBILE */
 @media screen and (max-width: 800px) {
+
+  .hero-content p {
+    padding: 0;
+  }
   .desktop-center {
     display: none;
   }
