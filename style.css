@@ -652,7 +652,7 @@ body {
 
 .seb-dreaming h1 span {
   font-size: calc(2vmin + 10px);
-  font-size: clamp(2px, 5vw, 54px);
+  font-size: clamp(3px, 7vw, 40px);
   margin: 0 10px;
   font-weight: 800;
   color: #5a5a5a;
@@ -673,6 +673,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.friends-pic {
+  margin: 1rem 0;
+}
+
+.friends-pic img {
+  width: clamp(3px, 70vw, 600px);
 }
 
 @-webkit-keyframes flash {
