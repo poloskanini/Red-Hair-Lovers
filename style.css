@@ -528,6 +528,23 @@ body {
   cursor: pointer;
 }
 
+.formBoxes-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.formBoxes-inputs input {
+  margin: 10px;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+
+
 .formBoxes label,
 .formBoxes input {
   cursor: pointer;
@@ -815,6 +832,9 @@ h1 span:nth-child(13) {
 /* MEDIA QUERIES ORIENTATION PAYSAGE */
 @media screen and (orientation: landscape) and (max-height: 600px) {
 
+  .hero {
+    height: 150vh;
+  }
   .desktop-center {
     display: none;
   }
@@ -825,4 +845,21 @@ h1 span:nth-child(13) {
   .container #section-first {
     height: 150vh;
   }
+}
+
+/* MEDIA QUERIES SPECIAL IPAD */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 767px) 
+  and (max-device-width: 1023px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-content h1 {
+      font-size: clamp(60px, 13vw, 140px);
+    }
+
+    .hero-content p {
+      font-size: clamp(20px, 4vw, 38px);
+    }
 }
