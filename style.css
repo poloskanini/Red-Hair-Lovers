@@ -83,11 +83,15 @@ body {
 }
 
 #desktop-left-title {
-  padding-right: 1.5rem;
+  padding: 1rem 1.5rem 2rem 0;
   text-decoration: none;
   font-family: 'Agrandir';
   text-shadow: rgb(0 0 0 / 30%) 0px 2px 2px;
   color: #FFF;
+}
+
+#desktop-left-title:hover {
+color: rgb(231, 52, 88);
 }
 
 .welcome {
@@ -115,7 +119,7 @@ body {
 #desktop-center-link-log:hover {
   border-bottom: 2px solid rgb(231, 52, 88);;
   padding: 0 0.75rem 0.75rem 0.75rem;
-  color: rgb(231, 52, 88);;
+  color: rgb(231, 52, 88);
   text-decoration: none;
 }
 
@@ -260,6 +264,13 @@ body {
   margin-right: 100px;
 }
 
+.fa-venus {
+  float: left;
+  font-size: 1.5rem;
+  padding: 0 10px 0 0;
+  color: rgb(221, 76, 100);
+}
+
 .raw_image {
   background-image: url(content/Rousse1.png);
   padding-top: 75%;
@@ -303,7 +314,7 @@ body {
   height: 100%;
   position: relative;
   background: linear-gradient(to right, rgba(255,255,255,.7), rgb(255,255,255));
-  box-shadow: rgb(0 0 0 / 40%) 0px 50px 100px 0px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 30px 50px 0px;
   border-top: 8px solid rgb(255, 214, 24);
   margin-left: -2rem;
   text-align: left;
@@ -335,17 +346,29 @@ body {
 
 .leaflet_content_text h3 {
   font-weight: bold;
+  font-size: 25px;
+}
+
+.leaflet_content_text h4 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.leaflet_content_text h5 {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .description {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   max-width: 40rem;
   font-style: italic;
   cursor: pointer;
 }
 
 .description p {
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .learn_more {
@@ -399,6 +422,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.section_page2 {
+  display: block;
 }
 
 .box {
@@ -578,15 +605,16 @@ body {
   cursor: pointer;
   border-radius: 20px;
   background-color: white;
-  background-image: linear-gradient(to right, transparent 50%, #ceccc8 50%, #fcdc27);
+  background-image: linear-gradient(to right, transparent 50%, #ceccc8 50%, #f3ecc2);
   background-size: 300%;
   color: black;
   font-weight: 500;
-  transition: .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .formSubmit .buttonsub:hover {
   background-position: 100%;
+  transform: scale(1.1);
 }
 
 .mdpperdu a {
