@@ -1,8 +1,7 @@
 // Header change background
-
 window.onscroll = function() {
   if (document.documentElement.scrollTop > 60) {
-    document.getElementById("header").style.background="rgba(255,255,255,.7)";
+    document.getElementById("header").style.background="rgba(255,255,255,.9)";
     document.getElementById("desktop-left-title").style.color="black";
     document.getElementById("desktop-center-link").style.color="black";
     document.getElementById("desktop-center-link-log").style.color="black";
@@ -15,8 +14,7 @@ window.onscroll = function() {
   }
 }
 
-
-// Effet
+// Effet sur l'input
 const inputs = document.querySelectorAll('input');
 for (let i = 0; i < inputs.length; i++) {
   let field = inputs[i];
@@ -29,3 +27,10 @@ for (let i = 0; i < inputs.length; i++) {
     }
   })
 }
+
+// Custom User
+let user = document.getElementById('user');
+const userTitle = document.getElementById('user-title')
+let userValue = user.value;
+
+userTitle.prepend(userValue)
