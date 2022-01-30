@@ -6,7 +6,7 @@ window.onscroll = function() {
     document.getElementById("desktop-center-link").style.color="black";
     document.getElementById("desktop-center-link-log").style.color="black";
 
-  } else {
+    } else {
     document.getElementById("header").style.background="transparent";
     document.getElementById("desktop-left-title").style.color="white";
     document.getElementById("desktop-center-link").style.color="white";
@@ -28,9 +28,42 @@ for (let i = 0; i < inputs.length; i++) {
   })
 }
 
-// Custom User
-let user = document.getElementById('user');
-const userTitle = document.getElementById('user-title')
-let userValue = user.value;
+// LOCALSTORAGE
+// const storageInput = document.querySelector('.storage');
+// const text = document.querySelector('.text');
+// const buttonSub = document.querySelector('.buttonsub');
+// const storedInput = localStorage.getItem('textinput');
+// let storedFinalName = document.getElementById('storedfinalname');
 
-userTitle.prepend(userValue)
+
+// Stocke ce que j'écris dans l'input en temps réel
+// storageInput.addEventListener('input', letter => {
+//   text.textContent = letter.target.value
+// })
+
+
+// Fonction pour sauvegarder ce que j'écris dans le local Storage
+// const saveToLocalStorage = () => {
+//   localStorage.setItem('textinput', text.textContent);
+// }
+
+// buttonSub.addEventListener('click', saveToLocalStorage);
+
+// storedFinalName.textContent = text.textContent;
+
+const name = () => {
+  let storedFinalName = document.getElementById('storedfinalname');
+  let nameStorage = localStorage.getItem('nom').toUpperCase();
+  if (nameStorage == null) {
+    storedFinalName.innerHTML = " "
+  } else {
+    storedFinalName.innerHTML = `${nameStorage} ,`;
+  }
+}
+
+function setData() {
+  let user = document.getElementById('user').value;
+  localStorage.setItem('nom', user);
+}
+
+name();

@@ -710,6 +710,12 @@ footer a {
   color: #e2df1a;
   text-shadow: 1px 1px 1px white;
   text-align: center;
+  font-size: calc(2vmin + 10px);
+  font-size: clamp(3px, 7vw, 40px);
+  margin: 0 10px;
+  font-weight: 800;
+  color: #5a5a5a;
+  animation: flash 1.2s linear infinite;
 }
 
 .seb-dreaming h1 span {
