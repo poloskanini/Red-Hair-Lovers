@@ -744,6 +744,10 @@ footer a {
   flex-direction: column;
 }
 
+.seb-wrapper h2 {
+  color: white;
+}
+
 .friends-pic {
   margin: 1rem 0;
 }

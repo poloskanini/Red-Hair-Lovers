@@ -57,7 +57,7 @@ const name = () => {
   if (nameStorage == null) {
     storedFinalName.innerHTML = " "
   } else {
-    storedFinalName.innerHTML = `${nameStorage} ,`;
+    storedFinalName.innerHTML = `${nameStorage},`;
   }
 }
 
