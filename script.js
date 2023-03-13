@@ -1,6 +1,6 @@
 // Header change background
 window.onscroll = function() {
-  if (document.documentElement.scrollTop > 60) {
+  if (document.documentElement.scrollTop > 20) {
     document.getElementById("header").style.background="rgba(255,255,255,.9)";
     document.getElementById("desktop-left-title").style.color="black";
     document.getElementById("desktop-center-link").style.color="black";
